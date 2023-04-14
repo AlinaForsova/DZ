@@ -1,0 +1,17 @@
+public class DZ {
+    public static boolean isEmpty(String a){
+        return a==null || a.length()==0;
+    }
+    public static int program(String s, String b) {
+        if (isEmpty(s) || isEmpty(b)) {
+            return 0;
+        }
+        return s.split(b, -1).length - 1; //разделяет строку вокруг заданной подстроки
+    }
+
+        public static void main(String[] args){
+        String a ="ADBGFBADBTHGFDADB";
+        String b ="ADB";
+            System.out.println("Подстрока " + b + " встречается в основной строке " +  program(a,b) + " раза");
+        }
+}
