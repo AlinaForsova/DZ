@@ -1,5 +1,5 @@
 public class DZ {
-    public static boolean isEmpty(String a){
+    public static boolean isEmpty(String a){ //проверяет, является ли строка нулевой и пустой
         return a==null || a.length()==0;
     }
     public static int program(String s, String b) {
